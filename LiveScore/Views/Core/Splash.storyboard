@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TFd-WU-q9l">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="K9x-3p-Bhd">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TFd-WU-q9l" customClass="SplashViewController" customModule="LiveScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qSV-x8-52T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALC-MF-pOL">
+                                <rect key="frame" x="28" y="72" width="358" height="86"/>
+                                <string key="text">What league do
+you interest</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can choose more that one" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuA-aZ-Cff">
+                                <rect key="frame" x="28" y="166" width="358" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wbc-6T-BDY">
+                                <rect key="frame" x="16" y="214.5" width="382" height="481.5"/>
+                                <color key="backgroundColor" name="dark"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="59r-Zs-kEe">
+                                    <size key="itemSize" width="110" height="110"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y8-4D-3rj">
+                                <rect key="frame" x="189.5" y="812" width="35" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonTapped:" destination="TFd-WU-q9l" eventType="touchUpInside" id="wzN-dL-QIx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-vM-1VF" customClass="Button" customModule="LiveScore" customModuleProvider="target">
+                                <rect key="frame" x="24" y="724" width="366" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="mQs-cL-RXZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Continue"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="num-cQ-0Eo"/>
+                        <color key="backgroundColor" name="dark"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="num-cQ-0Eo" firstAttribute="trailing" secondItem="wbc-6T-BDY" secondAttribute="trailing" constant="16" id="2Qg-LK-xcO"/>
+                            <constraint firstItem="Kh8-vM-1VF" firstAttribute="leading" secondItem="num-cQ-0Eo" secondAttribute="leading" constant="24" id="49C-Ws-mwO"/>
+                            <constraint firstItem="wbc-6T-BDY" firstAttribute="top" secondItem="UuA-aZ-Cff" secondAttribute="bottom" constant="28" id="7pR-fy-J9O"/>
+                            <constraint firstItem="num-cQ-0Eo" firstAttribute="trailing" secondItem="ALC-MF-pOL" secondAttribute="trailing" constant="28" id="9eR-hk-GxA"/>
+                            <constraint firstItem="ALC-MF-pOL" firstAttribute="leading" secondItem="num-cQ-0Eo" secondAttribute="leading" constant="28" id="AHp-Mf-WoD"/>
+                            <constraint firstItem="num-cQ-0Eo" firstAttribute="trailing" secondItem="UuA-aZ-Cff" secondAttribute="trailing" constant="28" id="Om8-OQ-pJ2"/>
+                            <constraint firstItem="UuA-aZ-Cff" firstAttribute="top" secondItem="ALC-MF-pOL" secondAttribute="bottom" constant="8" id="QNN-tL-op3"/>
+                            <constraint firstItem="num-cQ-0Eo" firstAttribute="trailing" secondItem="Kh8-vM-1VF" secondAttribute="trailing" constant="24" id="T17-Nc-opQ"/>
+                            <constraint firstItem="7Y8-4D-3rj" firstAttribute="centerX" secondItem="qSV-x8-52T" secondAttribute="centerX" id="TJt-z7-Ner"/>
+                            <constraint firstItem="7Y8-4D-3rj" firstAttribute="top" secondItem="Kh8-vM-1VF" secondAttribute="bottom" constant="28" id="cdw-NU-cy2"/>
+                            <constraint firstItem="UuA-aZ-Cff" firstAttribute="leading" secondItem="num-cQ-0Eo" secondAttribute="leading" constant="28" id="deA-BR-j62"/>
+                            <constraint firstItem="num-cQ-0Eo" firstAttribute="bottom" secondItem="7Y8-4D-3rj" secondAttribute="bottom" constant="16" id="fzp-94-dtv"/>
+                            <constraint firstItem="ALC-MF-pOL" firstAttribute="top" secondItem="num-cQ-0Eo" secondAttribute="top" constant="28" id="gHa-wl-LJZ"/>
+                            <constraint firstItem="Kh8-vM-1VF" firstAttribute="top" secondItem="wbc-6T-BDY" secondAttribute="bottom" constant="28" id="n3O-fl-sC3"/>
+                            <constraint firstItem="wbc-6T-BDY" firstAttribute="leading" secondItem="num-cQ-0Eo" secondAttribute="leading" constant="16" id="xRg-w4-iER"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leaguesCollectionView" destination="wbc-6T-BDY" id="sLA-yx-PYY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMp-L7-z82" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9100" y="156.97151424287858"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Kh8-vM-1VF">
+            <size key="intrinsicContentSize" width="76" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="dark">
+            <color red="0.093999996781349182" green="0.093999996781349182" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
