@@ -15,13 +15,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         // if user selected leagues
         if UserDefaults.standard.bool(forKey: "leagueSelection") {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+            let mainTabBarController = MainTabBarController()
             window.rootViewController = mainTabBarController
         } else {
             // if user not selected leagues
-            let storyboard = UIStoryboard(name: "Splash", bundle: nil)
-            let splashViewController = storyboard.instantiateViewController(identifier: "SplashViewController")
+            let splashViewController = SplashViewController()
             window.rootViewController = splashViewController
         }
         window.makeKeyAndVisible()

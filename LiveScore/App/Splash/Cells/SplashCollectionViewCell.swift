@@ -7,7 +7,8 @@
 
 import UIKit
 
-class SplashCollectionViewCell: UICollectionViewCell {
+#warning("Refactor to ProgrammaticUI")
+final class SplashCollectionViewCell: UICollectionViewCell {
     // MARK: - @IBOutlets
     @IBOutlet private weak var cellView: UIView!
     @IBOutlet private weak var leagueImageView: UIImageView!
