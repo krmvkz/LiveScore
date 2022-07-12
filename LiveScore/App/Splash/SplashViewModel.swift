@@ -5,7 +5,7 @@
 //  Created by Arman Karimov on 10.06.2022.
 //
 
-class SplashViewModel {
+final class SplashViewModel {
     let leagueIcons: [SplashModel] = [
         SplashModel(imageName: "la-liga-logo", leagueName: "La Liga"),
         SplashModel(imageName: "epl-logo", leagueName: "EPL"),

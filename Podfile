@@ -7,6 +7,8 @@ target 'LiveScore' do
   # Pods for LiveScore
   pod 'Alamofire'
   pod 'Kingfisher'
+  pod 'SkeletonView'
+  pod 'SnapKit'
   pod 'SwiftLint'
 
 end
