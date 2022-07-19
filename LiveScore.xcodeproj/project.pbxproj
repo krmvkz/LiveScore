@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA3EC6D28870EE100B176A2 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA3EC6C28870EE100B176A2 /* MatchesTableViewCell.swift */; };
 		5EC724251F7A0CDAD272D294 /* Pods_LiveScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6358F4F9F9C454E07813EFD /* Pods_LiveScore.framework */; };
 		7F23ACBA284E437500CC98FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23ACB9284E437500CC98FF /* AppDelegate.swift */; };
 		7F23ACBC284E437500CC98FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23ACBB284E437500CC98FF /* SceneDelegate.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EA3EC6C28870EE100B176A2 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
 		77C68AE57AE1BB0AB773C7F4 /* Pods-LiveScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScore.debug.xcconfig"; path = "Target Support Files/Pods-LiveScore/Pods-LiveScore.debug.xcconfig"; sourceTree = "<group>"; };
 		7F23ACB6284E437500CC98FF /* LiveScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F23ACB9284E437500CC98FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EA3EC6E28870FEC00B176A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3EA3EC6C28870EE100B176A2 /* MatchesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5C6B04EE1E46BDB387DE6737 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				7F980512287DB83A00E2476D /* MatchesViewController.swift */,
+				3EA3EC6E28870FEC00B176A2 /* Cells */,
 			);
 			path = Matches;
 			sourceTree = "<group>";
@@ -428,6 +439,7 @@
 				7F23ACBA284E437500CC98FF /* AppDelegate.swift in Sources */,
 				7F2508F628546A11000F70E2 /* NetworkManager.swift in Sources */,
 				7FAACC33285332010039DA2F /* MainTabBarController.swift in Sources */,
+				3EA3EC6D28870EE100B176A2 /* MatchesTableViewCell.swift in Sources */,
 				7FAACC3D28535C4F0039DA2F /* UIColor+Custom.swift in Sources */,
 				7FAACC392853520B0039DA2F /* SplashViewModel.swift in Sources */,
 				7FAACC2728531CEB0039DA2F /* SplashCollectionViewCell.swift in Sources */,
